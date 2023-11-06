@@ -1,0 +1,215 @@
+/* General styles */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #a82730;
+}
+
+/* Header styles */
+header {
+    background-color: #e0e0e0;
+    padding: 20px 0;
+}
+
+header nav {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li {
+    background-color:#e0e0e0;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+header nav ul li a:hover {
+    color: #a82730;
+}
+
+/* Section styles */
+section {
+    margin-bottom: 50px;
+}
+
+.person-name {
+    font-size:3em;
+}
+
+.icon-contact {
+    transform:translateY(20%);
+    padding-right:5px;
+    color: #000;
+}
+
+section h1, section h2, section h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.education-image-div {
+    padding-right:0px;
+    text-align:center;
+}
+
+.img-section {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+section a {
+    color: #000;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section #contact {
+    text-align: center;
+}
+
+section #contact ul {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.img-place {
+    width: 75%;
+}
+
+.social-media-div {
+    padding-top: 16px;
+    padding-left: 16px;
+}
+
+.social-media-div-email {
+    padding-top: 16px;
+    padding-bottom:16px;
+}
+
+.person-description {
+    font-size:2em;
+}
+
+
+.portfolio-div {
+    background-color:#fff;
+    padding:16px;
+    margin-left:3.5%;
+    margin-right:3.5%;
+    height:417px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.portfolio-div-image {
+    padding-right:0px;
+    padding-left:0px;
+    text-align:center;
+}
+
+.portfolio-image {
+    margin-bottom:0px;
+    max-width:92%;
+    max-height:335px;
+}
+
+.portfolio-image-caption {
+    padding-left:0px;
+    padding-left:0px;
+    position:absolute;
+    bottom:0px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+.portfolio-div-caption {
+    padding-left:0px;
+    padding-left:0px;
+    position:absolute;
+    bottom:0px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .education-image-div {
+        margin-top: 20px;
+    }
+
+    .portfolio-div-caption {
+        background-color: #fff;
+    }
+
+    .modal-dialog {
+        top: 20%;
+        transform: translate(-20%, -20%);
+      }
+
+    .img-place {
+        width: 124px;
+    }
+
+    .card-skill {
+        padding:16px;
+        background-color:#fff;
+    }
+
+    header {
+        display:none;
+    }
+
+    .social-media-link-desktop {
+        display:none;
+    }
+
+    .person-name {
+        font-size: 3.6em;
+        text-align: center;
+    }
+
+    .person-description {
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .education-image-div {
+        margin-top: 15px;
+    }
+
+    .portfolio-div:hover {
+        background-color:rgb(173, 7, 7);
+        color:#fff;
+    }
+}
