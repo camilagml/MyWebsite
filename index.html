@@ -379,11 +379,25 @@
                         <div class="col-sm-5 col-sm-offset-3" style="background-color:#fff;">
                             <div class="row">
                                 <div id="divLinkedin" class="social-media-div">
-                                    <a href="https://www.linkedin.com/in/camilagml/" target="_blank"><i class="fab fa-linkedin fa-2x icon-contact"></i><span class="social-media-link-desktop">https://www.linkedin.com/in/camilagml/</span></a>
+                                    <div>
+                                        <a href="https://www.linkedin.com/in/camilagml/" target="_blank">
+                                            <i class="fab fa-linkedin fa-2x icon-contact"></i>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <span class="social-media-link-desktop">https://www.linkedin.com/in/camilagml/</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="social-media-div-email" id="divEmail">
-                                <i style="padding-right:5px;" class="fas fa-envelope fa-2x icon-contact"></i>camila_gml@hotmail.com
+                            <div class="row">
+                                <div class="social-media-div" id="divEmail" style="padding-bottom:16px;">
+                                    <div>
+                                        <i style="padding-right:5px;" class="fas fa-envelope fa-2x icon-contact"></i>
+                                    </div>
+                                    <div>
+                                        camila_gml@hotmail.com
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -426,9 +440,12 @@
 
     <script>
         if (screen.width <= 768) {
-        document.getElementById("divLinkedin").classList.add("col-xs-4");
-        document.getElementById("divInstagram").classList.add("col-xs-4");
-        document.getElementById("divFacebook").classList.add("col-xs-4");
+            document.getElementById("divLinkedin").classList.add("col-xs-12");
+            document.getElementById("divLinkedin").style.textAlign = "center";
+            document.getElementById("divLinkedin").style.display = "block";
+
+            document.getElementById("divEmail").style.paddingLeft = "0px";
+            document.getElementById("divEmail").style.justifyContent = "center";
         }
     </script>
 </html>
